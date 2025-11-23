@@ -191,7 +191,7 @@
               { name: { hu: 'Úszásoktatás (2 fő - 60 perc)', ro: 'Cursuri înot (2 pers - 60 min)' }, price: '140 RON' },
               { name: { hu: 'Aqua Fitness (5 alkalom)', ro: 'Aqua Fitness (5 șed.)' }, price: '175 RON' },
               { name: { hu: 'Relaxációs masszázs (55 perc)', ro: 'Masaj relaxare (55 min)' }, price: '90 RON' },
-              { name: { hu: 'Köpölymasszázs (55 perc)', ro: 'Masaj vacuum (50 min)' }, price: '90 RON' },
+              { name: { hu: 'köpölymasszázs (55 perc)', ro: 'Masaj vacuum (50 min)' }, price: '90 RON' },
 			  { name: { hu: 'Hát masszázs (30 perc)', ro: 'Masaj spate (30 min)' }, price: '70 RON' },
             ]
           }
@@ -534,99 +534,97 @@
 
               {/* --- CONTACT SECTION --- */}
               <section id="contact" className="py-24 bg-gradient-to-t from-ocean-900 to-slate-900 text-white relative">
-                <div className="container mx-auto px-6 relative z-10">
-                  <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    
-                    <div>
-                      <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">
-                        {lang === 'hu' ? 'Lépjen velünk kapcsolatba!' : 'Contactați-ne!'}
-                      </h2>
-                      <p className="text-ocean-100 text-lg mb-10 leading-relaxed">
-                        {lang === 'hu' 
-                          ? 'Találjon meg minket Csíkszentdomokoson! Várjuk kérdéseit telefonon vagy személyesen.' 
-                          : 'Ne găsiți în Sândominic! Așteptăm întrebările dumneavoastră la telefon sau personal.'}
-                      </p>
+                <div className="container mx-auto px-6 relative z-10">
+                  <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    
+                    <div>
+                      <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">
+                        {lang === 'hu' ? 'Lépjen velünk kapcsolatba!' : 'Contactați-ne!'}
+                      </h2>
+                      <p className="text-ocean-100 text-lg mb-10 leading-relaxed">
+                        {lang === 'hu' 
+                          ? 'Találjon meg minket Csíkszentdomokoson! Várjuk kérdéseit telefonon vagy személyesen.' 
+                          : 'Ne găsiți în Sândominic! Așteptăm întrebările dumneavoastră la telefon sau personal.'}
+                      </p>
 
-                      <div className="space-y-6">
-                        <div className="flex items-start gap-4">
-                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                              <div className="text-ocean-300"><Icons.Phone /></div>
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-lg">{lang === 'hu' ? 'Recepció' : 'Recepție'}</h4>
-                              <a href={`tel:${CONTACT_INFO.phoneReception.replace(/\s/g, '')}`} className="text-slate-300 hover:text-white transition-colors">{CONTACT_INFO.phoneReception}</a>
-                           </div>
-                        </div>
+                      <div className="space-y-6">
+                        <div className="flex items-start gap-4">
+                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                              <div className="text-ocean-300"><Icons.Phone /></div>
+                           </div>
+                           <div>
+                              <h4 className="font-bold text-lg">{lang === 'hu' ? 'Recepció' : 'Recepție'}</h4>
+                              <a href={`tel:${CONTACT_INFO.phoneReception.replace(/\s/g, '')}`} className="text-slate-300 hover:text-white transition-colors">{CONTACT_INFO.phoneReception}</a>
+                           </div>
+                        </div>
 
-                        <div className="flex items-start gap-4">
-                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                              <div className="text-ocean-300"><Icons.User /></div>
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-lg">{lang === 'hu' ? 'Kapcsolattartás (Bara Artúr)' : 'Contact (Bara Artúr)'}</h4>
-                              <a href={`tel:${CONTACT_INFO.phoneManager.replace(/\s/g, '')}`} className="text-slate-300 hover:text-white transition-colors">{CONTACT_INFO.phoneManager}</a>
-                           </div>
-                        </div>
+                        <div className="flex items-start gap-4">
+                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                              <div className="text-ocean-300"><Icons.User /></div>
+                           </div>
+                           <div>
+                              <h4 className="font-bold text-lg">{lang === 'hu' ? 'Kapcsolattartás (Bara Artúr)' : 'Contact (Bara Artúr)'}</h4>
+                              <a href={`tel:${CONTACT_INFO.phoneManager.replace(/\s/g, '')}`} className="text-slate-300 hover:text-white transition-colors">{CONTACT_INFO.phoneManager}</a>
+                           </div>
+                        </div>
 
-                        <div className="flex items-start gap-4">
-                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                              <div className="text-ocean-300"><Icons.Mail /></div>
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-lg">Email</h4>
-                              <a href={`mailto:${CONTACT_INFO.email}`} className="text-slate-300 hover:text-white transition-colors">{CONTACT_INFO.email}</a>
-                           </div>
-                        </div>
+                        <div className="flex items-start gap-4">
+                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                              <div className="text-ocean-300"><Icons.Mail /></div>
+                           </div>
+                           <div>
+                              <h4 className="font-bold text-lg">Email</h4>
+                              <a href={`mailto:${CONTACT_INFO.email}`} className="text-slate-300 hover:text-white transition-colors">{CONTACT_INFO.email}</a>
+                           </div>
+                        </div>
 
-                        {/* --- FACEBOOK LINK BEILLESZTÉSE --- */}
-                        <div className="flex items-start gap-4">
-                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                              {/* Feltételezett Facebook ikon */}
-                              <div className="text-ocean-300"><Icons.Facebook /></div> 
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-lg">Facebook</h4>
-                              <a 
-                                 href="https://www.facebook.com/profile.php?id=100093905919961" 
-                                 target="_blank" 
-                                 rel="noopener noreferrer" 
-                                 className="text-slate-300 hover:text-white transition-colors"
-                             >
-                                 {lang === 'hu' ? 'Kövessen minket a Facebookon!' : 'Urmăriți-ne pe Facebook!'}
-                             </a>
-                           </div>
-                        </div>
-                        {/* ---------------------------------- */}
+                        <div className="flex items-start gap-4">
+                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
+                              <div className="text-ocean-300"><Icons.MapPin /></div>
+                           </div>
+                           <div>
+                              <h4 className="font-bold text-lg">{lang === 'hu' ? 'Cím' : 'Adresă'}</h4>
+                              <p className="text-slate-300">{CONTACT_INFO.address[lang]}</p>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
 
-                        <div className="flex items-start gap-4">
-                           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center shrink-0">
-                              <div className="text-ocean-300"><Icons.MapPin /></div>
-                           </div>
-                           <div>
-                              <h4 className="font-bold text-lg">{lang === 'hu' ? 'Cím' : 'Adresă'}</h4>
-                              <p className="text-slate-300">{CONTACT_INFO.address[lang]}</p>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
+                    <div className="h-[500px] w-full bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative">
+                       <iframe 
+                         src={CONTACT_INFO.mapUrl}
+                         className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
+                         style={{ border: 0 }}
+                         loading="lazy" 
+                         referrerPolicy="no-referrer-when-downgrade"
+                         title="Map"
+                       ></iframe>
+                       <div className="absolute top-4 right-4 bg-white/90 text-slate-900 px-4 py-2 rounded-lg text-sm font-bold shadow-lg pointer-events-none">
+                         DJ125 89
+                       </div>
+                    </div>
 
-                    <div className="h-[500px] w-full bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative">
-                       <iframe 
-                         src={CONTACT_INFO.mapUrl}
-                         className="w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
-                         style={{ border: 0 }}
-                         loading="lazy" 
-                         referrerPolicy="no-referrer-when-downgrade"
-                         title="Map"
-                       ></iframe>
-                       <div className="absolute top-4 right-4 bg-white/90 text-slate-900 px-4 py-2 rounded-lg text-sm font-bold shadow-lg pointer-events-none">
-                         DJ125 89
-                       </div>
-                    </div>
+                  </div>
+                </div>
+              </section>
 
-                  </div>
-                </div>
-              </section>
+              {/* --- FOOTER --- */}
+              <footer className="bg-slate-950 py-12 border-t border-white/5 text-center md:text-left">
+                <div className="container mx-auto px-6">
+                   <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                      <div>
+                        <h3 className="font-heading font-bold text-xl mb-2">DOMNUS<span className="text-ocean-400">AQUA</span></h3>
+                        <p className="text-slate-500 text-sm">© 2025 All rights reserved.</p>
+                      </div>
+                      
+                      <div className="flex gap-4">
+                         <a href="https://www.facebook.com/profile.php?id=100093905919961" target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-blue-600 hover:text-white text-slate-400 p-3 rounded-full transition-all">
+                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                         </a>
+                      </div>
+                   </div>
+                </div>
+              </footer>
 
               {/* --- LIGHTBOX MODAL --- */}
               {lightboxImage && (
