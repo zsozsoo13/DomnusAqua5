@@ -105,7 +105,7 @@
           {
             id: 'adult-swim', icon: Icons.User,
             title: { hu: 'Felnőtt Úszásoktatás', ro: 'Cursuri înot adulți' },
-            description: { hu: 'Kezdőknek és újrakezdőknek, egyéni órák keretében is.', ro: 'Pentru începători și cei care revin la înot, inclusiv individual.' }
+            description: { hu: 'Kezdő és haladó csoportok vagy személyreszabott egyéni órák.', ro: 'Grupuri pentru începători și avansați sau lecții individuale.' }
           },
           {
             id: 'aqua-fitness', icon: Icons.Dumbbell,
@@ -191,7 +191,8 @@
               { name: { hu: 'Úszásoktatás (2 fő - 60 perc)', ro: 'Cursuri înot (2 pers - 60 min)' }, price: '140 RON' },
               { name: { hu: 'Aqua Fitness (5 alkalom)', ro: 'Aqua Fitness (5 șed.)' }, price: '175 RON' },
               { name: { hu: 'Relaxációs masszázs (55 perc)', ro: 'Masaj relaxare (55 min)' }, price: '90 RON' },
-              { name: { hu: 'Hát masszázs (30 perc)', ro: 'Masaj spate (30 min)' }, price: '70 RON' },
+              { name: { hu: 'köpölymasszázs (55 perc)', ro: 'Masaj vacuum (50 min)' }, price: '90 RON' },
+			  { name: { hu: 'Hát masszázs (30 perc)', ro: 'Masaj spate (30 min)' }, price: '70 RON' },
             ]
           }
         ];
@@ -371,8 +372,12 @@
                       <h3 className="font-heading font-bold text-xl uppercase tracking-wide">{lang === 'hu' ? 'Nyitvatartás' : 'Program'}</h3>
                     </div>
                     <div className="flex justify-between text-slate-300">
-                      <span className="font-semibold">{lang === 'hu' ? 'Hétfő - Péntek' : 'Luni - Vineri'}:</span>
-                      <span>16:00 – 21:00</span>
+                      <span className="font-semibold">{lang === 'hu' ? 'Hétfő - Szerda' : 'Luni - Miercuri'}:</span>
+                      <span>08:00-13:00; 16:00 – 21:00</span>
+                    </div>
+					<div className="flex justify-between text-slate-300">
+                      <span className="font-semibold">{lang === 'hu' ? 'Csütörtök - Péntek' : 'Joi - Vineri'}:</span>
+                      <span> 16:00 – 21:00</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span className="font-semibold">{lang === 'hu' ? 'Szombat - Vasárnap' : 'Sâmbătă - Duminică'}:</span>
